@@ -1,0 +1,150 @@
+[debug] [2024-05-25T09:34:12.623Z] ----------------------------------------------------------------------
+[debug] [2024-05-25T09:34:12.628Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-25T09:34:12.629Z] CLI Version:   13.10.1
+[debug] [2024-05-25T09:34:12.630Z] Platform:      win32
+[debug] [2024-05-25T09:34:12.630Z] Node Version:  v21.6.2
+[debug] [2024-05-25T09:34:12.630Z] Time:          Sat May 25 2024 12:34:12 GMT+0300 (East Africa Time)
+[debug] [2024-05-25T09:34:12.631Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-25T09:34:12.833Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-25T09:34:12.835Z] > authorizing via signed-in user (ruthtadesse4998@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\Desktop\Amazon_Clone\amazonClone\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-25T09:34:20.020Z] Using project from CLI flag: clone-c4d16
+[debug] [2024-05-25T09:34:20.025Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 [none]
+[debug] [2024-05-25T09:34:21.227Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 200
+[debug] [2024-05-25T09:34:21.227Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 {"projectId":"clone-c4d16","projectNumber":"188695509217","displayName":"Amazon-clone","name":"projects/clone-c4d16","resources":{"hostingSite":"clone-c4d16"},"state":"ACTIVE","etag":"1_b3300bef-1448-401a-a9dd-8393a3dee51d"}
+[info] i  Using project clone-c4d16 (Amazon-clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-05-25T09:34:21.408Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-25T09:34:21.409Z] > authorizing via signed-in user (ruthtadesse4998@gmail.com)
+[debug] [2024-05-25T09:34:21.409Z] [iam] checking project clone-c4d16 for permissions ["firebase.projects.get"]
+[debug] [2024-05-25T09:34:21.411Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions [none]
+[debug] [2024-05-25T09:34:21.411Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:34:21.411Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-25T09:34:24.486Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions 200
+[debug] [2024-05-25T09:34:24.486Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-25T09:34:24.488Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-25T09:34:24.488Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:34:24.491Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-25T09:34:24.492Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:34:27.373Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-25T09:34:27.373Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-05-25T09:34:27.376Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-25T09:34:27.376Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[debug] [2024-05-25T09:35:35.679Z] Error: ENOSPC: no space left on device, write
+    at Object.writeFileSync (node:fs:2343:20)
+    at Config.writeProjectFile (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:155:12)
+    at C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:178:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:39:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-25T09:35:35.982Z] Error: ENOSPC: no space left on device, write
+    at Object.writeSync (node:fs:934:3)
+    at Function.writeFileSync [as sync] (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\write-file-atomic\index.js:215:10)
+    at set all [as all] (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\configstore\index.js:61:20)
+    at Configstore.set (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\configstore\index.js:91:12)
+    at process.<anonymous> (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js:102:35)
+    at process.emit (node:events:531:35)
+    at process.processEmit [as emit] (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:191:37)
+    at process.exit (node:internal/process/per_thread:192:15)
+    at Timeout._onTimeout (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\errorOut.js:20:17)
+    at listOnTimeout (node:internal/timers:573:17)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-05-25T09:56:02.026Z] ----------------------------------------------------------------------
+[debug] [2024-05-25T09:56:02.032Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-05-25T09:56:02.033Z] CLI Version:   13.10.1
+[debug] [2024-05-25T09:56:02.034Z] Platform:      win32
+[debug] [2024-05-25T09:56:02.034Z] Node Version:  v21.6.2
+[debug] [2024-05-25T09:56:02.035Z] Time:          Sat May 25 2024 12:56:02 GMT+0300 (East Africa Time)
+[debug] [2024-05-25T09:56:02.036Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-25T09:56:02.383Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-25T09:56:02.384Z] > authorizing via signed-in user (ruthtadesse4998@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\Desktop\Amazon_Clone\amazonClone\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-05-25T09:56:08.529Z] Using project from CLI flag: clone-c4d16
+[debug] [2024-05-25T09:56:08.534Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 [none]
+[debug] [2024-05-25T09:56:10.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 200
+[debug] [2024-05-25T09:56:10.003Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-c4d16 {"projectId":"clone-c4d16","projectNumber":"188695509217","displayName":"Amazon-clone","name":"projects/clone-c4d16","resources":{"hostingSite":"clone-c4d16"},"state":"ACTIVE","etag":"1_b3300bef-1448-401a-a9dd-8393a3dee51d"}
+[info] i  Using project clone-c4d16 (Amazon-clone) 
+[info] 
+=== Functions Setup
+[debug] [2024-05-25T09:56:10.049Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-25T09:56:10.050Z] > authorizing via signed-in user (ruthtadesse4998@gmail.com)
+[debug] [2024-05-25T09:56:10.050Z] [iam] checking project clone-c4d16 for permissions ["firebase.projects.get"]
+[debug] [2024-05-25T09:56:10.052Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions [none]
+[debug] [2024-05-25T09:56:10.052Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:56:10.052Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-25T09:56:11.946Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions 200
+[debug] [2024-05-25T09:56:11.947Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c4d16:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-05-25T09:56:11.949Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-05-25T09:56:11.949Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:56:11.953Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-05-25T09:56:11.954Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/clone-c4d16
+[debug] [2024-05-25T09:56:13.996Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com 200
+[debug] [2024-05-25T09:56:13.996Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-05-25T09:56:14.198Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com 200
+[debug] [2024-05-25T09:56:14.198Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/clone-c4d16/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] functions.source must be unique but 'functions' was used more than once.
